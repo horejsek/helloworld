@@ -16,7 +16,8 @@ int main(void)
     return 0;
 }
 
-int fibonacci(int n) {
+int fibonacci(int n)
+{
     if (n == 0 || n == 1) {
         return n;
     } else {
@@ -24,7 +25,8 @@ int fibonacci(int n) {
     }
 }
 
-int* fibonacciLine(int n) {
+int* fibonacciLine(int n)
+{
     int* list = new int[n];
     for (int x = 0; x < n; x++) {
         list[x] = fibonacci(x);

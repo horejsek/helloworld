@@ -15,7 +15,8 @@ int main(void)
     return 0;
 }
 
-int fibonacci(int n) {
+int fibonacci(int n)
+{
     if (n == 0 || n == 1) {
         return n;
     } else {
@@ -23,7 +24,8 @@ int fibonacci(int n) {
     }
 }
 
-int* fibonacciLine(int n) {
+int* fibonacciLine(int n)
+{
     int x;
     int* list = (int*)malloc(n*sizeof(int));
     for (x = 0; x < n; x++) {

@@ -1,0 +1,15 @@
+{% load admin_urls %}
+<!DOCTYPE html>
+<html lang="cs-cz" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Demo - Article</title>
+</head>
+<body>
+    <a href="{% url 'admin:index' %}">admin</a>, <a href="{% url 'home' %}">home</a>
+
+    <h1>Article {{ article.title }}</h1>
+    
+    {{ article.text }}
+</body>
+</html>

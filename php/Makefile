@@ -10,6 +10,10 @@ run-hello-world:
 run-fibonacci:
 	php fibonacci/fibonacci.php
 
+run-nette:
+	echo "You must copy folder nette into /var/www and open it with your browser.\nApache2 & PHP5 & sqlite2 needed.\n"
+	php nette/www/index.php
+
 install-libs:
 	apt-get install php
 

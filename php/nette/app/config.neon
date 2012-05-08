@@ -1,0 +1,22 @@
+#
+# SECURITY WARNING: it is CRITICAL that this file & directory are NOT accessible directly via a web browser!
+# http://nette.org/security-warning
+#
+common:
+	php:
+		date.timezone: Europe/Prague
+
+	nette:
+		database:
+			demo:
+				dsn: "sqlite2:%appDir%/models/demo.db"
+
+	services:
+		database: @Nette\Database\Connection
+
+		articles:
+			factory: @database::table(articles)
+
+production < common:
+
+development < common:

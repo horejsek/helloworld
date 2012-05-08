@@ -1,0 +1,9 @@
+{block #content}
+
+<h1>Articles</h1>
+
+<ul>
+{foreach $articles as $article}
+	<li><a n:href="article, $article->id">{$article->title}</a></li>
+{/foreach}
+</ul>

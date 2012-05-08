@@ -9,10 +9,12 @@
 
     <h1>Articles</h1>
     
+    <ul>
 	{% for article in articles %}
 		<li><a href="{% url 'articles.views.article' article.url %}">{{ article.title }}</a></li>
     {% empty %}
-        No article. Please, add some article in admin.
+        <li>No article. Please, add some article in <a href="{% url 'admin:index' %}">admin</a>.</li>
 	{% endfor %}
+	</ul>
 </body>
 </html>

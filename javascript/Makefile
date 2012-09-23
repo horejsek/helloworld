@@ -2,6 +2,7 @@
 all:
 	@echo "make run-hello-world"
 	@echo "make run-fibonacci"
+	@echo "make run-nodejs"
 	@echo "make install-libs"
 
 run-hello-world:
@@ -10,5 +11,8 @@ run-hello-world:
 run-fibonacci:
 	rhino fibonacci/fibonacci.js
 
+run-nodejs:
+	node nodejs/nodejs.js
+
 install-libs:
-	apt-get install rhino
+	apt-get install rhino nodejs

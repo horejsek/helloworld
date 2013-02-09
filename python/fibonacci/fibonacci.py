@@ -5,7 +5,7 @@ def fibonacci(n):
     else:
         return fibonacci(n-1) + fibonacci(n-2)
 
-def fibonacciLine(n):
+def fibonacci_line(n):
     return [fibonacci(x) for x in range(n)]
 
-print fibonacciLine(10)
+print fibonacci_line(10)

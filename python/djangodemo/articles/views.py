@@ -5,7 +5,6 @@ from django.template import RequestContext
 from models import Articles
 
 
-
 def home(request):
     articles = Articles.objects.filter()
 
@@ -13,7 +12,6 @@ def home(request):
         'articles': articles,
     }
     return render_to_response('home.html', dic, context_instance=RequestContext(request))
-
 
 
 def article(request, url=''):

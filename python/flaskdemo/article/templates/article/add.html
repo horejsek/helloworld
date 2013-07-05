@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% from 'helpers/form_field.html' import render_field %}
+<h2>Add article</h2>
+<form method="post" action="/article/add">
+    <dl>
+        {{ render_field(form.title) }}
+        {{ render_field(form.text) }}
+        <p><input type="submit" value="Add">
+    </dl>
+</form>
+{% endblock %}
+
